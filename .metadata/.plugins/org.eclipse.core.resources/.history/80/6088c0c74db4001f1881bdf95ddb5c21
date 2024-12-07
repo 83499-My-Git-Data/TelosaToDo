@@ -1,0 +1,20 @@
+package com.app.entities;
+
+import javax.persistence.Entity;
+import javax.persistence.Table;
+
+import lombok.*;
+
+@AllArgsConstructor
+@NoArgsConstructor
+@Getter
+@Setter
+@ToString
+@Entity
+@Table(name = "todo_app")
+public class Todo {
+
+	private int id;
+    private String task;
+    private boolean completed;
+}
